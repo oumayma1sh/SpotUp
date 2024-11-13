@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SpotUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_back_to_esprit_clubs">Welcome back to Esprit Clubs</string>
+    <string name="language">Language</string>
+    <string name="system_mode_automatically_adjusts_appearance_based_on_your_device_settings">System mode automatically adjusts appearance based on your device settings.</string>
+    <string name="system_default">System Default</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="appearance">Appearance</string>
+    <string name="delete_saved_password">Delete Saved Password</string>
+    <string name="security_settings">Security Settings</string>
+    <string name="current_password">Current Password</string>
+    <string name="enter_current_password">Enter current password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="re_enter_new_password">Re-enter new password</string>
+    <string name="apply">Apply</string>
+    <string name="birthday">Birthday</string>
+    <string name="Apply">Apply</string>
+    <string name="tell_something_about_yourself">Tell something about yourself</string>
+    <string name="about_me">About Me</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_your_birthday">Enter your birthday</string>
+    <string name="gender">Gender *</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="last_name">Last Name *</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="first_name">First Name *</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email">Email *</string>
+    <string name="x">X</string>
+    <string name="X">X</string>
+    <string name="cover_picture">Cover Picture</string>
+    <string name="change_cover_photo">Change Cover Photo</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="Email">Email</string>
+    <string name="Gender">Gender</string>
+    <string name="role">Role</string>
+    <string name="Birthday">Birthday</string>
+    <string name="edit_your_informations_here">Edit your informations here</string>
+    <string name="personal_details">Personal details</string>
+    <string name="password">Password</string>
+
+    <string name="signal_added_message">Compte signalé avec succès</string>
+    <string name="error_occurred_message">Une erreur est produite</string>
+</resources>

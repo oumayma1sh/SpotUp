@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/event"
+            android:icon="@drawable/ic_person"
+            android:title="events" />
+        <item
+            android:id="@+id/Signal_List"
+            android:icon="@drawable/ic_person"
+            android:title="Signal List" />
+        <item
+            android:id="@+id/comments"
+            android:icon="@drawable/ic_person"
+            android:title="comments" />
+        <item
+            android:id="@+id/oumayma"
+            android:icon="@drawable/ic_person"
+            android:title="oumayma" />
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_settings" />
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout" />
+        </menu>
+    </item>
+</menu>

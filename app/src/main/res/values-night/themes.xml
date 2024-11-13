@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SpotUp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item> <!-- Text color on primary elements -->
+        <item name="android:windowBackground">@color/black</item> <!-- Background for dark mode -->
+        <item name="android:textColor">@color/white</item> <!-- Ensure white text for readability -->
+    </style>
+
+
+    <style name="Theme.EspritClubs" parent="Base.Theme.SpotUp">
+        <!-- Customize your dark theme here -->
+        <item name="android:textColor">@color/white</item> <!-- White text for readability -->
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    </style>
+
+    <style name="ProfileFieldLabel">
+        <item name="android:textColor">@color/grey</item> <!-- Lighter text for readability -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="ProfileFieldText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item> <!-- Lighter text for readability -->
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+</resources>
