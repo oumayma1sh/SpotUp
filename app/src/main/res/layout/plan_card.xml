@@ -1,0 +1,142 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/planName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:paddingBottom="8dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:textColor="@color/bleuviolet"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/planImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Image du Plan"
+                android:padding="4dp"
+                android:scaleType="centerCrop" />
+
+            <!-- Description du Plan avec une icône -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/planDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Localisation du Plan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Icône de localisation"
+                    android:paddingEnd="8dp"
+                    android:src="@drawable/localisation" />
+
+                <TextView
+                    android:id="@+id/planLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Horaires d'Ouverture avec une icône -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Icône d'heure d'ouverture"
+                    android:paddingEnd="8dp"
+                    android:src="@drawable/open" />
+
+                <TextView
+                    android:id="@+id/openingHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Horaires de Fermeture avec une icône -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Icône d'heure de fermeture"
+                    android:paddingEnd="8dp"
+                    android:src="@drawable/close" />
+
+                <TextView
+                    android:id="@+id/closingHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/editPlan"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Modifier le plan"
+                    android:padding="8dp"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+                <ImageView
+                    android:id="@+id/deletePlan"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Supprimer le plan"
+                    android:padding="8dp"
+                    android:src="@android:drawable/ic_delete" />
+            </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

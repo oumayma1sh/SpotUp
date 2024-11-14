@@ -20,10 +20,7 @@
             android:id="@+id/comments"
             android:icon="@drawable/ic_person"
             android:title="comments" />
-        <item
-            android:id="@+id/oumayma"
-            android:icon="@drawable/ic_person"
-            android:title="oumayma" />
+
     </group>
 
     <item

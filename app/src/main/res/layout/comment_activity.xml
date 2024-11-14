@@ -1,0 +1,101 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EDE7F6"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CommentActivity"> <!-- Fond mauve léger -->
+    <!-- Image au-dessus de l'événement -->
+    <ImageView
+        android:id="@+id/event_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/escape_game" />
+
+    <!-- Titre du bon plan avec un design en mauve -->
+    <TextView
+        android:id="@+id/bon_plan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal: Escape Game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4A148C"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Description du bon plan -->
+    <TextView
+        android:id="@+id/bon_plan_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy a discounted escape game session at 'Mystery Room', available every Saturday afternoon.Welcomee !"
+        android:textSize="16sp"
+        android:textColor="#4A148C"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Bouton pour ajouter un commentaire -->
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commenter"
+        android:backgroundTint="#7B1FA2"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Champ de texte pour saisir un commentaire, invisible au départ -->
+    <EditText
+        android:id="@+id/comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Écrivez votre commentaire ici..."
+        android:backgroundTint="#7B1FA2"
+        android:textColor="#4A148C"
+        android:textColorHint="#9575CD"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <!-- Bouton pour soumettre le commentaire, invisible au départ -->
+    <Button
+        android:id="@+id/submit_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publier"
+        android:backgroundTint="#7B1FA2"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:visibility="gone" /> <!-- Caché au départ -->
+
+    <!-- Liste des commentaires -->
+    <TextView
+        android:id="@+id/comments_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commentaires :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4A148C"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" /> <!-- Caché au départ -->
+
+
+    <ListView
+        android:id="@+id/comments_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="#7B1FA2"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/view_more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voir plus"
+        android:visibility="visible" /> <!-- Par défaut visible -->
+
+</LinearLayout>

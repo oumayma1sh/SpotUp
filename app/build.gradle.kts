@@ -47,6 +47,28 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    // Ajout de Glide
+    implementation(libs.glide) // bibliothèque Glide
+    // Ajout de CardView via l'alias défini dans libs.versions.toml
+    implementation(libs.cardview)
+    implementation ("androidx.drawerlayout:drawerlayout:1.2.0")
+    // Dépendances JavaMail compatibles avec Android
+    // Add only the latest JavaMail API dependency and exclude any older versions
+    implementation("com.sun.mail:android-mail:1.6.5") {
+        exclude(group = "com.sun.mail", module = "javax.mail")  // Ensure exclusions are handled
+    }
+    implementation("com.sun.mail:android-activation:1.6.5")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+    implementation ("mysql:mysql-connector-java:8.0.29")
+
+    implementation(libs.material.calendar.view)
+    //implementation(libs.androidx.constraintlayout)
+    implementation(libs.support.annotations)
+    implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+    //implementation(libs.androidx.activity)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editPlanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:hint="Plan Name" />
+
+    <EditText
+        android:id="@+id/editPlanDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/editPlanLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_mylocation"
+        android:hint="Location" />
+
+    <EditText
+        android:id="@+id/editOpeningHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Openning Time"
+        android:focusable="false"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/editClosingHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Closing Time"
+        android:focusable="false"
+        android:layout_marginBottom="20dp" />
+
+    <!-- New ImageView for displaying the selected image -->
+    <ImageView
+        android:id="@+id/editPlanImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Selected Plan Image"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <!-- Button to open the image picker -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes" />
+</LinearLayout>

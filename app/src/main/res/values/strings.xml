@@ -49,4 +49,29 @@
 
     <string name="signal_added_message">Compte signalé avec succès</string>
     <string name="error_occurred_message">Une erreur est produite</string>
+
+    <string-array name="categories_array">
+        <item>Categories</item>
+        <item>Restaurant</item>
+        <item>Boutique</item>
+        <item>Hotels</item>
+        <!-- Ajoutez d'autres catégories ici -->
+    </string-array>
+    <string-array name="locations_tunisia">
+        <item>Tunis</item>
+        <item>Sousse</item>
+        <item>Monastir</item>
+        <item>Sfax</item>
+        <item>Hammamet</item>
+        <item>Djerba</item>
+        <item>Gabès</item>
+        <item>Bizerte</item>
+        <item>Tozeur</item>
+        <item>Gafsa</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Boutique</item>
+        <item>Hôtel</item>
+        <item>Restaurant</item>
+    </string-array>
 </resources>

@@ -90,15 +90,33 @@ public class UserActivity extends AppCompatActivity {
                 Fragment selectedFragment = null;
                 // If statements to handle navigation item selection
                 if (item.getItemId() == R.id.navigation_home) {
-                    selectedFragment = new UserHomeFragment();
+                        Intent intent = new Intent(UserActivity.this, PlanListActivity.class);
+                        startActivity(intent);
+                        drawerLayout.closeDrawers();
+                        return true;
+
                 }else if (item.getItemId() == R.id.oumayma) {
                     selectedFragment = new OumaymaFragment();
+
+
+
+
                 } else if (item.getItemId() == R.id.settings) {
                     selectedFragment = new UserSettingsFragment();
                 } else if (item.getItemId() == R.id.logout) {
                     finish();
                 }else if (item.getItemId() == R.id.signal) {
                     Intent intent = new Intent(UserActivity.this, AddSignal.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawers();
+                    return true;
+                }  else if (item.getItemId() == R.id.event) {
+                    Intent intent = new Intent(UserActivity.this, EventListe.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawers();
+                    return true;
+                }else if (item.getItemId() == R.id.comments) {
+                    Intent intent = new Intent(UserActivity.this, CommentActivity.class);
                     startActivity(intent);
                     drawerLayout.closeDrawers();
                     return true;

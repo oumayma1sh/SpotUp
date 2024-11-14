@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:gravity="center">
+
+    <!-- Icône de calendrier -->
+    <ImageView
+        android:id="@+id/overview_event_image"
+        android:layout_width="wrap_content"
+        android:layout_height="364dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_overview"
+        android:src="@drawable/calendar" />
+    <TextView
+        android:id="@+id/overview_participant_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participants: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+    <!-- Titre de l'événement -->
+    <TextView
+        android:id="@+id/overview_event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Client Meeting Scheduled"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Détails de l'événement -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/background_light"
+        android:elevation="4dp"
+        android:layout_gravity="center">
+
+        <!-- Date et Heure -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/overview_event_date_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="start date"
+                android:drawablePadding="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/overview_event_end_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="end date"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/overview_event_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="price"
+                android:drawablePadding="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/overview_event_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mumbai"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/overview_event_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description of the event goes here..."
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Subtle "View Schedule" Button -->
+    <Button
+        android:id="@+id/overview_view_schedule_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+    android:padding="12dp"
+    android:text="View Schedule"
+    android:textColor="@android:color/black"
+    android:textSize="18sp" />
+
+    <!-- Bouton de participation -->
+    <Button
+        android:id="@+id/overview_participate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_overview"
+        android:padding="12dp"
+        android:text="Participate"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

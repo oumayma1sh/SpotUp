@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.AddPlanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:elevation="4dp">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextLocalisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:drawableStart="@android:drawable/ic_menu_mylocation"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/buttonUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:layout_marginBottom="10dp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/buttonUploadImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextOpeningTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Openning Time"
+                android:focusable="false"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextClosingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Closing Time"
+                android:focusable="false"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/buttonAddPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new Plan" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
