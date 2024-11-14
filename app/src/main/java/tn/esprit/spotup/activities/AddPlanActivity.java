@@ -188,7 +188,7 @@ public class AddPlanActivity extends AppCompatActivity {
 
 
         // Envoyer un e-mail automatiquement
-        String recipient = "rania.bensalem.1@esprit.tn";
+        String recipient = "raniabensalem53@gmail.com";
         String subject = "New Plan Added: " + name;
         String message = "Hello,\n\n" +
                 "🎉 **Exciting News! A New Plan Has Just Been Added!** 🎉\n\n" +
@@ -199,7 +199,7 @@ public class AddPlanActivity extends AppCompatActivity {
                 "👉 **Click here to discover more**: [Insert URL or App Link Here]\n\n" +
                 "Best regards,\n" +
                 "The BonPlans Team";
-        new Thread(() -> MailSender.sendEmail(recipient, subject, message)).start();
+        new Thread(() -> MailSender.sendEmail(recipient, subject, message));
 
 
         // Démarrer l'activité de la liste des plans

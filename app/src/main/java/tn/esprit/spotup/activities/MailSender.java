@@ -15,8 +15,8 @@ public class MailSender {
 
     public static void sendEmail(String recipient, String subject, String message) {
         // Vos identifiants Gmail
-        final String username = "0b67ea3edcb95a"; // Remplacez par votre e-mail
-        final String password = "7c2b1234f45c35"; // Utilisez le mot de passe d'application
+        final String username = "raniabensalem53@gmail.com"; // Remplacez par votre e-mail
+        final String password = "eyao cpku zitv tfpo"; // Utilisez le mot de passe d'application
 
         // Configuration des propriétés SMTP
         Properties props = new Properties();
@@ -56,8 +56,7 @@ public class MailSender {
 
 
 
-//package com.example.bonplans;
-//import android.util.Log;
+//package tn.esprit.spotup.activities;
 //import java.util.Properties;
 //import javax.mail.MessagingException;
 //import javax.mail.PasswordAuthentication;
@@ -75,8 +74,8 @@ public class MailSender {
 //            public void run() {
 //                String host = "sandbox.smtp.mailtrap.io";
 //                String port = "465";
-//                String username = "0b67ea3edcb95a";
-//                String password = "7c2b1234f45c35";
+//                String username = "a7585c242b5a97";
+//                String password = "d5265dce8cdb86";
 //                //String to = "rania.bensalem.1@esprit.tn"; // Change to a valid email
 //
 //                Properties props = new Properties();
